@@ -11,26 +11,26 @@ li, a {
     font-weight: 500;
     color: white;
     text-decoration: none;
-    background-color: black;
+    background-color: #939598;
 }
 
 li, a:hover {
-    color: #fff078;
+    color: #7fdf7f;
 }
 
 li, a::after {
-    color: #7fdf7f;
+    color: #fff078;
 }
 
 header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: black;
+    background-color: #939598;
 }
 
 .logo {
-    background-color: black;
+    background-color: #939598;
     padding: 0px 0px 0px 30px;
     margin-right: auto;
 }
@@ -45,10 +45,33 @@ header {
 }
 
 .hero {
-    height: 260px;
+    height: 300px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/hero-no\ background.png");
+    background-image: url("../images/hero-no_background_grey.png");
     background-size: cover;
     background-position: center;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #939598;
+}
+
+.footer {
+    justify-content: center;
+    text-align: center;
+    background-color: #939598;
+}
+
+.footer h3 {
+    background-color: #939598;
+    padding: 10px 10px 0px 10px;
+    font-size: 20px;
+}
+
+.footer p {
+    background-color: #939598;
+    padding: 5px 10px 10px 10px; 
+    font-size: 18px;
 }
