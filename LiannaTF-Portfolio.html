@@ -1,118 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Lianna TF's Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
+      <img
+        class="logo"
+        src="../LiannaTF-Portfolio/assets/images/header-no background.png"
+        alt="portfolio logo"
+        width="180px"
+        height="80"
+      />
 
-        <img class="logo" src="../LiannaTF-Portfolio/assets/images/header-no background.png" alt="portfolio logo" width="180px" height="80"/>
-        
-        <nav>
-            <ul class="nav-links">
-                <li class="menu-items"><a href="#about-me">about me</a></li>
-                <li class="menu-items"><a href="#my-work">my work</a></li>
-                <li class="menu-items"><a href="#contact-me">contact me</a></li>
-            </ul>
-        </nav>
-
+      <nav>
+        <ul class="nav-links">
+          <li class="menu-items"><a href="#about-me">about me</a></li>
+          <li class="menu-items"><a href="#my-work">my work</a></li>
+          <li class="menu-items"><a href="#contact-me">contact me</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="hero">
-        <figure class="hero">
+      <figure class="hero">
         <!-- h1 Cool subtitle here! h1 -->
-        </figure>
+      </figure>
     </section>
 
     <main class="grid-container">
+      <section class="grid-item" id="about-me">
+        <h2>About Me</h2>
+        <p>
+          Hey, there! I'm a UK-based web-developer with a robust background in
+          linguistics and a history of English language teaching. I am currently
+          transitioning into the realm of computer programming, finding
+          intriguing connections between these seemingly dissimilar disciplines.
+          <br />
+          <br />
+          My expertise in linguistics has equipped me with a keen ability for
+          identifying patterns, deciphering syntax structures, and understanding
+          intricate systems - skills that I've found to be remarkably applicable
+          in the world of web-development. Both fields demand a deep
+          understanding of logic and syntactic structures, as well as a
+          creativity for effective communication of complex ideas. <br />
+          <br />
+          The shift from language study to web development has been a
+          considerable challenge, but the analytical thinking, problem-solving
+          skills and attention to detail honed in linguistics have proven
+          invaluable in writing clean, efficient code and debugging with a
+          linguistic detective's eye. <br />
+          <br />
+          I'm excited to continue this journey, merging my love for language
+          with the ever-evolving world of technology. By merging the precision
+          of coding with the nuances of language, I hope to create and
+          collaborate on compelling digital projects that resonate with users.
+        </p>
+      </section>
 
-        <section class="grid-item" id="about-me">
-            <h2>About Me</h2>
-            <p>Hey, there! I'm a UK-based web-developer with a robust background in linguistics and a history of English language teaching. I am currently transitioning into the realm of computer programming, finding intriguing connections between these seemingly dissimilar disciplines. </br>
-            </br>
-            My expertise in linguistics has equipped me with a keen ability for identifying patterns, deciphering syntax structures, and understanding intricate systems - skills that I've found to be remarkably applicable in the world of web-development. Both fields demand a deep understanding of logic and syntactic structures, as well as a creativity for effective communication of complex ideas. </br>
-            </br>
-            The shift from language study to web development has been a considerable challenge, but the analytical thinking, problem-solving skills and attention to detail honed in linguistics have proven invaluable in writing clean, efficient code and debugging with a linguistic detective's eye. </br>
-            </br>
-            I'm excited to continue this journey, merging my love for language with the ever-evolving world of technology. By merging the precision of coding with the nuances of language, I hope to create and collaborate on compelling digital projects that resonate with users.
-            </p>
-        </section>
+      <section class="grid-item" class="responsive" id="lianna-pic">
+        <img
+          src="../LiannaTF-Portfolio/assets/images/me-small.png"
+          alt="Lianna TF"
+        />
+      </section>
 
-        <section class="grid-item" class="responsive" id="lianna-pic"><img src="../LiannaTF-Portfolio/assets/images/me-small.png" alt="Lianna TF"/></section>
+      <section class="grid-item" id="my-work">
+        <h2>My Work</h2>
 
-    
-        <section class="grid-item" id="my-work">
-            <h2>My Work</h2>
-            
-            <div class="big-project">
-                <p id="almamae">Alma Mae Publishing</p>
-                <img src="./assets/images/mywork-almamae.png">
-            </div>
-        
-            <div class="small-projects">
-                <div id="gph">
-                    <p>Grammar Points Hub</p>
-                    <a href="https://www.grammarpointshub.com/" target="_blank"> <img src="./assets/images/mywork-gph.png"> </a>
-                </div>
-        
-                <div id="pattsnprints">
-                    <p>Patts n Prints</p>
-                    <a href="https://www.pattsnprints.com/" target="_blank"> <img src="./assets/images/mywork-pattsnprints.png"> </a>
-                </div>
-            </div>
+        <div class="big-project">
+          <p id="almamae">Alma Mae Publishing</p>
+          <img src="./assets/images/mywork-almamae.png" />
+        </div>
 
-        </section>
+        <div class="small-projects">
+          <div class="gph">
+            <p id="gphtitle">Grammar Points Hub</p>
+            <a class="small-project-pics"
+              href="https://www.grammarpointshub.com/"
+              target="_blank">
+              <img src="./assets/images/mywork-gph.png" />
+            </a>
+          </div>
 
-            
-        <section class="grid-item" id="contact-me">
-            <h2>Contact Me</h2>
+          <div class="pattsnprints">
+            <p id="pattsnprintstitle">Patts n Prints</p>
+            <a
+              class="small-project-pics"
+              href="https://www.pattsnprints.com/"
+              target="_blank"
+            >
+              <img src="./assets/images/mywork-pattsnprints.png" />
+            </a>
+          </div>
+        </div>
+      </section>
 
-            <div class="contact-box">
-                <section class="contact-item">
-                    <ul id="contact-details">
-                        <li> <span>Location:</span> <a href="https://maps.app.goo.gl/MQhPgcTurYxDLCZb7"> St. Paul's, Bristol, United Kingdom </a> </li>
-                        <li> <span>Email:</span> <a href="mailto:awordofmyown@gmail.com"> awordofmyown@gmail.com </a> </li>
-                        <li><span> LinkedIn:</span> <a href=“https://www.linkedin.com/in/lianna-thomas-forbes-680b1778/”> Lianna Thomas-Forbes</a> </li>
-                        <li> <span>GitHub:</span> <a href=“https://github.com/Lianna87”> Lianna87 </a> </li>
-                    </ul>
-                </section>
+      <section class="grid-item" id="contact-me">
+        <h2>Contact Me</h2>
 
-                <section class="contact-item" id="form">
-                    <form action="/action_page.php">
-                        <label for="fname">Name:</label>
-                        <br>
-                        <input class="text-box" type="text" id="fname" name="fname">
-                        <br>
-                        <label for="email">Email address:</label>
-                        <br>
-                        <input class="text-box" type="email" id="email" name="email">
-                        <br>
-                        <label for="message">Message:</label>
-                        <br>
-                        <textarea rows="4" cols="50" name="comment" form="usrform"></textarea>
-                        <br>
-                        <button type="submit" value="Submit">Submit</button>
-                    </form>
-                </section> 
-            </div>
-            <!-- change size? boxes -->
-    
-            
-        </section>
+        <div class="contact-box">
+          <section class="contact-item">
+            <ul id="contact-details">
+              <li>
+                <span>Location:</span>
+                <a href="https://maps.app.goo.gl/MQhPgcTurYxDLCZb7">
+                  St. Paul's, Bristol, United Kingdom
+                </a>
+              </li>
+              <li>
+                <span>Email:</span>
+                <a href="mailto:awordofmyown@gmail.com">
+                  awordofmyown@gmail.com
+                </a>
+              </li>
+              <li>
+                <span> LinkedIn:</span>
+                <a href="https://www.linkedin.com/in/lianna-thomas-forbes-680b1778/"> Lianna Thomas-Forbes </a>
+                </li>
+              <li> <span>GitHub:</span> <a href="https://github.com/Lianna87"> Lianna87 </a> </li>
+            </ul>
+          </section>
 
+          <section class="contact-item" id="form">
+            <form action="/action_page.php">
+              <label for="fname">Name:</label>
+              <br />
+              <input class="text-box" type="text" id="fname" name="fname" />
+              <br />
+              <label for="email">Email address:</label>
+              <br />
+              <input class="text-box" type="email" id="email" name="email" />
+              <br />
+              <label for="message">Message:</label>
+              <br />
+              <textarea
+                rows="4"
+                cols="50"
+                name="comment"
+                form="usrform"
+              ></textarea>
+              <br />
+              <button type="submit" value="Submit">Submit</button>
+            </form>
+          </section>
+        </div>
+        <!-- change size? boxes -->
+      </section>
     </main>
 
     <footer class="footer">
-        <h3>Made with ❤️️ by Lianna Thomas-Forbes</h3>
-            <p>
-            &copy; 2023 The TF Group, Ltd.
-            </p>
+      <h3>Made with ❤️️ by Lianna Thomas-Forbes</h3>
+      <p>&copy; 2023 The TF Group, Ltd.</p>
     </footer>
-
-</body>
-    
+  </body>
 </html>

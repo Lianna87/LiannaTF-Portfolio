@@ -8,22 +8,22 @@
     src: url("../Fonts/JosefinSlab-VariableFont_wght.ttf");
 }
 
-root: {
-    --header-color
+:root {
+    --accent1: #3e68a7;
+    --accent2: #7fdf7f;
 }
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: #fff078;
 }
 
 header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #939598;
+    background-color: var(--accent1);
 }
 
 ul {
@@ -36,20 +36,18 @@ ul {
     font-weight: 500;
     color: white;
     text-decoration: none;
-    background-color: #939598;
+    background-color: var(--accent1);
 }
 
 li, a:hover {
-    color: #7fdf7f;
+    color: var(--accent2);
 }
 
-li, a:after {
-    color: pink
-}
+
 /* change pink hex */
 
 .logo {
-    background-color: #939598;
+    background-color: var(--accent1);
     padding: 0px 0px 0px 10px;
     margin-right: auto;
 }
@@ -73,7 +71,7 @@ li, a:after {
     display: grid;
     width:100%;
     margin: 0px;
-    grid-template-columns: 1fr 1fr 1fr;grid-template-rows: 500px 800px 500px;
+    grid-template-columns: 1fr 1fr 1fr;grid-template-rows: 500px 1000px 500px;
     grid-template-areas:
     "about-me about-me lianna-pic"
     "my-work my-work my-work"
@@ -81,8 +79,7 @@ li, a:after {
 }
 
 .grid-item {
-    background-color: #f5f0ce;
-    margin: 6px;
+    margin: 0px;
     overflow: hidden;
 }
 
@@ -99,17 +96,20 @@ li, a:after {
 }
 
 #my-work {
+    display: flex;
     grid-area: my-work;
     background-color: #f5f0ce;
+    border-bottom: solid #fff078 3px;
+    border-top: solid #fff078 3px;
     padding: 20px;
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .big-project {
     background-size: cover;
-    width: 80vw;
+    background-color: #f5f0ce;
+    width: 75vw;
     height: auto;
     position: relative;
     text-align: center;
@@ -117,35 +117,82 @@ li, a:after {
 
 #almamae {
     position: absolute;
-    top: 50%;
+    bottom: 2%;
     left: 0%;
     color: black;
+    padding: 25px;
+    height: 25px;
+    color: var(--accent1);
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 5px solid var(--accent1);
 }
 
 .big-project:hover {
-    border: solid #7fdf7f 3px;
+    border: solid var(--accent2) 3px;
     cursor: pointer;
 }
 
 .small-projects {
     display: flex;
     justify-content: center;
+    background-color: #f5f0ce;
 }
 
-#gph #pattsnprints {
-    width: 25vw;
+.small-project-pics {
+    background-color: #f5f0ce;
+}
+
+.gph {
+    width: 35vw;
     height: auto;
+    margin: 20px;
+    position: relative;
+    text-align: center;
 }
 
-#gph:hover {
-    border: solid #7fdf7f 3px;
+#gphtitle {
+    position: absolute;
+    bottom: 2%;
+    left: 0%;
+    padding: 25px;
+    height: 25px;
+    color: var(--accent1);
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 5px solid var(--accent1);
 }
 
-#pattsnprints:hover {
-    border: solid #7fdf7f 3px;
+.pattsnprints {
+    width: 35vw;
+    height: auto;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+}
+
+#pattsnprintstitle {
+    position: absolute;
+    bottom: 2%;
+    left: 0%;
+    color: black;
+    background-color: rgba (255,255,255,0.7);
+    padding: 25px;
+    height: 25px;
+    color: var(--accent1);
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 5px solid var(--accent1);
+}
+
+.gph:hover {
+    border: solid var(--accent2) 3px;
+}
+
+.pattsnprints:hover {
+    border: solid var(--accent2) 3px;
 }
   
-
 #my-work h2 {
     text-align: center;
 }
@@ -172,8 +219,8 @@ li, a:after {
 h2 {
     font-family: pacifico-regular;
     font-size: 32px;
-    color: #939598;
-    padding: 10px 0px 20px 0px;
+    color: var(--accent1);
+    padding: 20px 0px 30px 0px;
     background-color: #f5f0ce;
 }
 
@@ -193,20 +240,14 @@ h2 {
     display: inline-flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    flex-direction: row;
     justify-content: space-evenly;
 }
 
 .contact-box section {
     padding: 10px 50px 5px 50px;
     border-color: black;
-    justify-content: space-around;
     background-color: #f5f0ce;
     flex-basis: 50%;
-}
-
-.contact-item {
-    background-color: #f5f0ce;
 }
 
 #contact-details li, #contact-details a {
@@ -221,7 +262,7 @@ h2 {
 }
 
 #contact-details a:hover {
-    color: #7fdf7f;
+    color: var(--accent2);
 }
 
 span {
@@ -247,13 +288,13 @@ label {
     box-sizing: border-box;
     padding: 12px 12px;
     margin: 10px 0px 20px;
-    border: 2px solid #939598;
+    border: 2px solid var(--accent1);
     border-radius: 6px;
     background-color: white;
 }
 
 .contact-item input:hover {
-    border: 3px solid #7fdf7f;;
+    border: 3px solid var(--accent2);
 }
 
 textarea {
@@ -262,17 +303,17 @@ textarea {
     box-sizing: border-box;
     padding: 12px 12px;
     margin: 10px 0px;
-    border: 2px solid #939598;
+    border: 2px solid var(--accent1);
     border-radius: 6px;
     background-color: white;
 }
 
 .contact-item textarea:hover {
-    border: 3px solid #7fdf7f;;
+    border: 3px solid var(--accent2);
 }
 
 button {
-    background-color:#939598;
+    background-color: #f8c8dc;
     border: none;
     color: black;
     padding: 12px 32px;
@@ -282,25 +323,24 @@ button {
 }
 
 button:hover {
-    background-color: #7fdf7f;
+    background-color: var(--accent2);
 }
 
 .footer {
     justify-content: center;
     text-align: center;
     padding: 30px 10px 10px 30px;
-    margin-top: 10px;
-    background-color: #939598;
+    background-color: var(--accent1);
 }
 
 .footer h3 {
-    background-color: #939598;
+    background-color: var(--accent1);
     padding: 10px 10px 0px 10px;
     font-size: 16px;
 }
 
 .footer p {
-    background-color: #939598;
+    background-color: var(--accent1);
     padding: 5px 10px 10px 10px; 
     font-size: 16px;
 }
