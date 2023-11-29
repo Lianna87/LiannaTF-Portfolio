@@ -1,344 +1,351 @@
 @font-face {
-    font-family: Pacifico-Regular;
-    src: url("../Fonts/Pacifico-Regular.ttf");
+  font-family: Pacifico-Regular;
+  src: url("../Fonts/Pacifico-Regular.ttf");
 }
 
 @font-face {
-    font-family: JosefinSlab-VariableFont_wght;
-    src: url("../Fonts/JosefinSlab-VariableFont_wght.ttf");
+  font-family: JosefinSlab-VariableFont_wght;
+  src: url("../Fonts/JosefinSlab-VariableFont_wght.ttf");
 }
 
 :root {
-    --accent1: #3e68a7;
-    --accent2: #7fdf7f;
+  --accent1: #3e68a7;
+  --accent2: #7fdf7f;
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: var(--accent1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--accent1);
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-.header li, .header a {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-    background-color: var(--accent1);
+.header li,
+.header a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  background-color: var(--accent1);
 }
 
-li, a:hover {
-    color: var(--accent2);
+li,
+a:hover {
+  color: var(--accent2);
 }
-
 
 /* change pink hex */
 
 .logo {
-    background-color: var(--accent1);
-    padding: 0px 0px 0px 10px;
-    margin-right: auto;
+  background-color: var(--accent1);
+  padding: 0px 0px 0px 10px;
+  margin-right: auto;
 }
 
 .nav-links li {
-    display: inline-flex;
-    padding: 0px 30px;
+  display: inline-flex;
+  padding: 0px 30px;
 }
 
 .hero {
-    height: 300px;
-    width: 100%;
-    background-color: white;
-    background-image: url("../images/hero-no_background_grey.png");
-    background-size: cover;
-    background-position: center;
+  height: 300px;
+  width: 100%;
+  background-color: white;
+  background-image: url("../images/hero-no_background_grey.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .grid-container {
-    display: grid;
-    width:100%;
-    margin: 0px;
-    grid-template-columns: 1fr 1fr 1fr;grid-template-rows: 500px 1000px 500px;
-    grid-template-areas:
+  display: grid;
+  width: 100%;
+  margin: 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 500px 1000px 500px;
+  grid-template-areas:
     "about-me about-me lianna-pic"
     "my-work my-work my-work"
     "contact-me contact-me contact-me";
 }
 
 .grid-item {
-    margin: 0px;
-    overflow: hidden;
+  margin: 0px;
+  overflow: hidden;
 }
 
 #about-me {
-    grid-area: about-me;
-    background-color: #f5f0ce;
-    padding: 20px;
-    line-height: 150%;
+  grid-area: about-me;
+  background-color: #f5f0ce;
+  padding: 20px;
+  line-height: 150%;
 }
 
 #lianna-pic {
-    grid-area: lianna-pic;
-    width: 100%;
-    height: auto;
+  grid-area: lianna-pic;
+  width: 100%;
+  height: auto;
 }
 
 #my-work {
-    display: flex;
-    grid-area: my-work;
-    background-color: #f5f0ce;
-    /* border-bottom: solid #fff078 3px; */
-    /* border-top: solid #fff078 3px; */
-    padding: 20px;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  grid-area: my-work;
+  background-color: #f5f0ce;
+  /* border-bottom: solid #fff078 3px; */
+  /* border-top: solid #fff078 3px; */
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .big-project {
-    background-size: cover;
-    background-color: #f5f0ce;
-    width: 75vw;
-    height: auto;
-    position: relative;
-    text-align: center;
+  background-size: cover;
+  background-color: #f5f0ce;
+  width: 75vw;
+  height: auto;
+  position: relative;
+  text-align: center;
 }
 
 #almamae {
-    position: absolute;
-    bottom: 2%;
-    left: 0%;
-    color: black;
-    padding: 25px;
-    height: 25px;
-    color: var(--accent1);
-    font-size: 18px;
-    font-weight: 600;
-    border-bottom: 5px solid var(--accent1);
+  position: absolute;
+  bottom: 2%;
+  left: 0%;
+  color: black;
+  padding: 25px;
+  height: 25px;
+  color: var(--accent1);
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 5px solid var(--accent1);
 }
 
 .big-project:hover {
-    border: solid var(--accent2) 3px;
-    cursor: pointer;
+  border: solid var(--accent2) 3px;
+  cursor: pointer;
 }
 
 .small-projects {
-    display: flex;
-    justify-content: center;
-    background-color: #f5f0ce;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f0ce;
 }
 
 .small-project-pics {
-    background-color: #f5f0ce;
+  background-color: #f5f0ce;
 }
 
 .gph {
-    width: 35vw;
-    height: auto;
-    margin: 20px;
-    position: relative;
-    text-align: center;
+  width: 35vw;
+  height: auto;
+  margin: 20px;
+  position: relative;
+  text-align: center;
 }
 
 #gphtitle {
-    position: absolute;
-    bottom: 3%;
-    left: 0%;
-    padding: 18px;
-    height: 25px;
-    color: var(--accent1);
-    font-size: 16px;
-    font-weight: 600;
-    border-bottom: 3px solid var(--accent1);
+  position: absolute;
+  bottom: 3%;
+  left: 0%;
+  padding: 18px;
+  height: 25px;
+  color: var(--accent1);
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 3px solid var(--accent1);
 }
 
 .gph:hover {
-    border: solid var(--accent2) 3px;
+  border: solid var(--accent2) 3px;
 }
 
 .pattsnprints {
-    width: 35vw;
-    height: auto;
-    margin: 20px;
-    position: relative;
-    text-align: center;
+  width: 35vw;
+  height: auto;
+  margin: 20px;
+  position: relative;
+  text-align: center;
 }
 
 #pattsnprintstitle {
-    position: absolute;
-    bottom: 3%;
-    left: 0%;
-    color: black;
-    padding: 18px;
-    height: 25px;
-    color: var(--accent1);
-    font-size: 16px;
-    font-weight: 600;
-    border-bottom: 3px solid var(--accent1);
+  position: absolute;
+  bottom: 3%;
+  left: 0%;
+  color: black;
+  padding: 18px;
+  height: 25px;
+  color: var(--accent1);
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 3px solid var(--accent1);
 }
 
 .pattsnprints:hover {
-    border: solid var(--accent2) 3px;
-}
-  
-#my-work h2 {
-    text-align: center;
+  border: solid var(--accent2) 3px;
 }
 
+#my-work h2 {
+  text-align: center;
+}
 
 #contact-me {
-    grid-area: contact-me;
-    background-color: #f5f0ce;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  grid-area: contact-me;
+  background-color: #f5f0ce;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .grid-item img {
-    object-fit: cover;
-    width: 100%;
-    max-height: 100%;
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
 }
 
 h2 {
-    font-family: pacifico-regular;
-    font-size: 32px;
-    color: var(--accent1);
-    padding: 20px 0px 30px 0px;
-    background-color: #f5f0ce;
+  font-family: pacifico-regular;
+  font-size: 32px;
+  color: var(--accent1);
+  padding: 20px 0px 30px 0px;
+  background-color: #f5f0ce;
 }
 
 #contact-me h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .grid-item p {
-    font-family: JosefinSlab-VariableFont_wght;
-    font-size: 18px;
-    text-align: justify;
-    color: black;
-    background-color: #f5f0ce;
+  font-family: JosefinSlab-VariableFont_wght;
+  font-size: 18px;
+  text-align: justify;
+  color: black;
+  background-color: #f5f0ce;
 }
 
 .contact-box {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
 }
 
 .contact-box section {
-    padding: 10px 50px 5px 50px;
-    border-color: black;
-    background-color: #f5f0ce;
-    flex-basis: 50%;
+  padding: 10px 50px 5px 50px;
+  border-color: black;
+  background-color: #f5f0ce;
+  flex-basis: 50%;
 }
 
-#contact-details li, #contact-details a {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 200;
-    text-decoration: none;
-    text-align: center;
-    line-height: 260%;
-    color: black;
-    background-color: #f5f0ce;
+#contact-details li,
+#contact-details a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  text-decoration: none;
+  text-align: center;
+  line-height: 260%;
+  color: black;
+  background-color: #f5f0ce;
 }
 
 #contact-details a:hover {
-    color: var(--accent2);
+  color: var(--accent2);
 }
 
 span {
-    background-color: #f5f0ce;
-    font-weight: 800;
+  background-color: #f5f0ce;
+  font-weight: 800;
 }
 
 form {
-    background-color: #f5f0ce;
+  background-color: #f5f0ce;
 }
 
 label {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 160;
-    color: black;
-    background-color: #f5f0ce;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 160;
+  color: black;
+  background-color: #f5f0ce;
 }
 
 .text-box {
-    width: 100%;
-    height: 35px;
-    box-sizing: border-box;
-    padding: 12px 12px;
-    margin: 10px 0px 20px;
-    border: 2px solid var(--accent1);
-    border-radius: 6px;
-    background-color: white;
+  width: 100%;
+  height: 35px;
+  box-sizing: border-box;
+  padding: 12px 12px;
+  margin: 10px 0px 20px;
+  border: 2px solid var(--accent1);
+  border-radius: 6px;
+  background-color: white;
 }
 
 .contact-item input:hover {
-    border: 3px solid var(--accent2);
+  border: 3px solid var(--accent2);
 }
 
 textarea {
-    width: 100%;
-    height: 100px;
-    box-sizing: border-box;
-    padding: 12px 12px;
-    margin: 10px 0px;
-    border: 2px solid var(--accent1);
-    border-radius: 6px;
-    background-color: white;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 12px 12px;
+  margin: 10px 0px;
+  border: 2px solid var(--accent1);
+  border-radius: 6px;
+  background-color: white;
 }
 
 .contact-item textarea:hover {
-    border: 3px solid var(--accent2);
+  border: 3px solid var(--accent2);
 }
 
 button {
-    background-color: #f8c8dc;
-    border: none;
-    color: black;
-    padding: 12px 32px;
-    text-decoration: none;
-    margin: 2px 2px;
-    cursor: pointer;
+  background-color: #f8c8dc;
+  border: none;
+  color: black;
+  padding: 12px 32px;
+  text-decoration: none;
+  margin: 2px 2px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: var(--accent2);
+  background-color: var(--accent2);
 }
 
 .footer {
-    justify-content: center;
-    text-align: center;
-    padding: 20px 10px 10px 20px;
-    background-color: var(--accent1);
+  justify-content: center;
+  text-align: center;
+  padding: 20px 10px 10px 20px;
+  background-color: var(--accent1);
 }
 
 .footer h3 {
-    background-color: var(--accent1);
-    padding: 10px 10px 0px 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
+  background-color: var(--accent1);
+  padding: 10px 10px 0px 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
 }
 
 .footer p {
-    background-color: var(--accent1);
-    padding: 5px 10px 10px 10px; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 14px;
+  background-color: var(--accent1);
+  padding: 5px 10px 10px 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 14px;
 }
