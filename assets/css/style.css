@@ -60,7 +60,6 @@ li, a:hover {
 .hero {
     height: 300px;
     width: 100%;
-    margin-bottom: 10px;
     background-color: white;
     background-image: url("../images/hero-no_background_grey.png");
     background-size: cover;
@@ -90,7 +89,8 @@ li, a:hover {
     line-height: 150%;
 }
 
-.responsive {
+#lianna-pic {
+    grid-area: lianna-pic;
     width: 100%;
     height: auto;
 }
@@ -99,8 +99,8 @@ li, a:hover {
     display: flex;
     grid-area: my-work;
     background-color: #f5f0ce;
-    border-bottom: solid #fff078 3px;
-    border-top: solid #fff078 3px;
+    /* border-bottom: solid #fff078 3px; */
+    /* border-top: solid #fff078 3px; */
     padding: 20px;
     flex-direction: column;
     align-items: center;
@@ -153,14 +153,18 @@ li, a:hover {
 
 #gphtitle {
     position: absolute;
-    bottom: 2%;
+    bottom: 3%;
     left: 0%;
-    padding: 25px;
+    padding: 18px;
     height: 25px;
     color: var(--accent1);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    border-bottom: 5px solid var(--accent1);
+    border-bottom: 3px solid var(--accent1);
+}
+
+.gph:hover {
+    border: solid var(--accent2) 3px;
 }
 
 .pattsnprints {
@@ -173,20 +177,15 @@ li, a:hover {
 
 #pattsnprintstitle {
     position: absolute;
-    bottom: 2%;
+    bottom: 3%;
     left: 0%;
     color: black;
-    background-color: rgba (255,255,255,0.7);
-    padding: 25px;
+    padding: 18px;
     height: 25px;
     color: var(--accent1);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    border-bottom: 5px solid var(--accent1);
-}
-
-.gph:hover {
-    border: solid var(--accent2) 3px;
+    border-bottom: 3px solid var(--accent1);
 }
 
 .pattsnprints:hover {
@@ -197,6 +196,7 @@ li, a:hover {
     text-align: center;
 }
 
+
 #contact-me {
     grid-area: contact-me;
     background-color: #f5f0ce;
@@ -204,10 +204,6 @@ li, a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#lianna-pic {
-    grid-area: lianna-pic;
 }
 
 .grid-item img {
@@ -329,18 +325,20 @@ button:hover {
 .footer {
     justify-content: center;
     text-align: center;
-    padding: 30px 10px 10px 30px;
+    padding: 20px 10px 10px 20px;
     background-color: var(--accent1);
 }
 
 .footer h3 {
     background-color: var(--accent1);
     padding: 10px 10px 0px 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
 }
 
 .footer p {
     background-color: var(--accent1);
     padding: 5px 10px 10px 10px; 
-    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
 }
